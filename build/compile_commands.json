@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/carlos/Downloads/nvim_files/chess/build",
+  "command": "/usr/bin/cc    -o CMakeFiles/chess.dir/main.c.o -c /home/carlos/Downloads/nvim_files/chess/main.c",
+  "file": "/home/carlos/Downloads/nvim_files/chess/main.c",
+  "output": "CMakeFiles/chess.dir/main.c.o"
+}
+]
