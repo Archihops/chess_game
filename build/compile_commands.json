@@ -4,5 +4,11 @@
   "command": "/usr/bin/cc    -o CMakeFiles/chess.dir/main.c.o -c /home/carlos/Downloads/nvim_files/chess/main.c",
   "file": "/home/carlos/Downloads/nvim_files/chess/main.c",
   "output": "CMakeFiles/chess.dir/main.c.o"
+},
+{
+  "directory": "/home/carlos/Downloads/nvim_files/chess/build",
+  "command": "/usr/bin/cc    -o CMakeFiles/chess.dir/moves.c.o -c /home/carlos/Downloads/nvim_files/chess/moves.c",
+  "file": "/home/carlos/Downloads/nvim_files/chess/moves.c",
+  "output": "CMakeFiles/chess.dir/moves.c.o"
 }
 ]

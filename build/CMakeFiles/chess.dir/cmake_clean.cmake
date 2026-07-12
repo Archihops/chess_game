@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/chess.dir/link.d"
   "CMakeFiles/chess.dir/main.c.o"
   "CMakeFiles/chess.dir/main.c.o.d"
+  "CMakeFiles/chess.dir/moves.c.o"
+  "CMakeFiles/chess.dir/moves.c.o.d"
   "chess"
   "chess.pdb"
 )

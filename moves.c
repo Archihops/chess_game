@@ -1,13 +1,5 @@
-#include "raylib.h"
-#include <stdbool.h>
+#include "header.h"
 
-const int SCREEN_WIDTH = 800;
-const int SCREEN_HEIGHT = 800;
-#define BOARD_SIZE  8
-const int SQUARE_SIZE = SCREEN_WIDTH / BOARD_SIZE;
-
-// Piece representations (Positive = White, Negative = Black, 0 = Empty)
-enum Pieces { EMPTY = 0, PAWN = 1, KNIGHT = 2, BISHOP = 3, ROOK = 4, QUEEN = 5, KING = 6 };
 
 int board[BOARD_SIZE][BOARD_SIZE] = {
     {-ROOK, -KNIGHT, -BISHOP, -QUEEN, -KING, -BISHOP, -KNIGHT, -ROOK},
@@ -53,6 +45,3 @@ void HandleInput() {
     }
 }
 
-int main() {
-    return 0;
-}

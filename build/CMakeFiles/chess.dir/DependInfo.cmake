@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/carlos/Downloads/nvim_files/chess/main.c" "CMakeFiles/chess.dir/main.c.o" "gcc" "CMakeFiles/chess.dir/main.c.o.d"
+  "/home/carlos/Downloads/nvim_files/chess/moves.c" "CMakeFiles/chess.dir/moves.c.o" "gcc" "CMakeFiles/chess.dir/moves.c.o.d"
   "" "chess" "gcc" "CMakeFiles/chess.dir/link.d"
   )
 
