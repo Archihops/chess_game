@@ -29,7 +29,5 @@ chess
  /usr/lib/gcc/x86_64-redhat-linux/16/libgcc_s_asneeded.so
  /usr/lib64/libatomic.so.1.2.0
  /usr/lib64/libc_nonshared.a
- /home/carlos/Downloads/nvim_files/chess/build/CMakeFiles/chess.dir/chesspieces.c.o
  /home/carlos/Downloads/nvim_files/chess/build/CMakeFiles/chess.dir/main.c.o
- /home/carlos/Downloads/nvim_files/chess/build/CMakeFiles/chess.dir/moves.c.o
 

@@ -27,12 +27,8 @@ chess: /lib64/ld-linux-x86-64.so.2 \
   /usr/lib/gcc/x86_64-redhat-linux/16/libgcc_s_asneeded.so \
   /usr/lib64/libatomic.so.1.2.0 \
   /usr/lib64/libc_nonshared.a \
-  CMakeFiles/chess.dir/chesspieces.c.o \
-  CMakeFiles/chess.dir/main.c.o \
-  CMakeFiles/chess.dir/moves.c.o
+  CMakeFiles/chess.dir/main.c.o
 
-
-CMakeFiles/chess.dir/chesspieces.c.o:
 
 /usr/lib64/libc_nonshared.a:
 
@@ -53,8 +49,6 @@ CMakeFiles/chess.dir/chesspieces.c.o:
 /usr/lib/gcc/x86_64-redhat-linux/16/libgcc.a:
 
 /home/carlos/Downloads/nvim_files/chess/main.c:
-
-CMakeFiles/chess.dir/moves.c.o:
 
 /usr/lib/gcc/x86_64-redhat-linux/16/include/stdbool.h:
 

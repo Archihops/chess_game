@@ -53,41 +53,6 @@ void HandleInput() {
     }
 }
 
-void DrawBoard() {
-    for (int row = 0; row < BOARD_SIZE; row++) {
-        for (int col = 0; col < BOARD_SIZE; col++) {
-            // Alternate colors across rows and columns
-            Color squareColor = ((row + col) % 2 == 0) ? BEIGE : BROWN;
-            
-            // Highlight the active tile if it is selected
-            if (isPieceSelected && row == selectedRow && col == selectedCol) {
-                squareColor = GOLD;
-            }
-
-            DrawRectangle(col * SQUARE_SIZE, row * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE, squareColor);
-            
-            // Temporary placeholder text visualization for pieces
-            if (board[row][col] != EMPTY) {
-                const char* pieceText = (board[row][col] > 0) ? "W" : "B";
-                DrawText(pieceText, col * SQUARE_SIZE + 35, row * SQUARE_SIZE + 30, 20, RAYWHITE);
-            }
-        }
-    }
-}
-
 int main() {
-    InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Chess with Raylib");
-    SetTargetFPS(60);
-
-    while (!WindowShouldClose()) {
-        HandleInput();
-        
-        BeginDrawing();
-            ClearBackground(RAYWHITE);
-            DrawBoard();
-        EndDrawing();
-    }
-
-    CloseWindow();
     return 0;
 }
