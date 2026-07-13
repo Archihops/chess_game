@@ -1,4 +1,5 @@
 #include "header.h"
+#include <raylib.h>
 
 void DrawBoard(void){
     for(int row = 0; row < BOARD_SIZE; row++){
@@ -7,17 +8,25 @@ void DrawBoard(void){
 
             // Notice we use the exact lowercase variables shared from moves.c
             if(isPieceSelected && row == selectedRow && col == selectedCol){
-                Color GetSquareColor = {255, 161, 0, 138};
+                GetSquareColor = GRAY;
             }
             DrawRectangle(col * SQUARE_SIZE, row * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE, GetSquareColor);
         }
     }
 }
 
+void DrawPieces(int row,int col,int posx,int posy){
+
+
+
+}
+
 int main(){
     SetConfigFlags(FLAG_WINDOW_RESIZABLE);
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Chess");
     SetTargetFPS(60);
+    
+    LoadPieces();
 
     while (!WindowShouldClose()){
         // 1. Update the game state first
@@ -29,7 +38,7 @@ int main(){
             DrawBoard();
         EndDrawing();
     }
-
+    UnloadPieces();
     CloseWindow();
     return 0;
 }

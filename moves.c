@@ -8,8 +8,8 @@ int board[BOARD_SIZE][BOARD_SIZE] = {
     {EMPTY, EMPTY,   EMPTY,   EMPTY,  EMPTY, EMPTY,   EMPTY,   EMPTY},
     {EMPTY, EMPTY,   EMPTY,   EMPTY,  EMPTY, EMPTY,   EMPTY,   EMPTY},
     {EMPTY, EMPTY,   EMPTY,   EMPTY,  EMPTY, EMPTY,   EMPTY,   EMPTY},
-    { PAWN,  PAWN,    PAWN,    PAWN,   PAWN,  PAWN,    PAWN,    PAWN},
-    { ROOK,  KNIGHT,  BISHOP,  QUEEN,  KING,  BISHOP,  KNIGHT,  ROOK}
+    {PAWN,  PAWN,    PAWN,    PAWN,   PAWN,  PAWN,    PAWN,    PAWN},
+    {ROOK,  KNIGHT,  BISHOP,  QUEEN,  KING,  BISHOP,  KNIGHT,  ROOK}
 };
 
 // Selection state tracking
@@ -17,8 +17,8 @@ bool isPieceSelected = false;
 int selectedRow = -1;
 int selectedCol = -1;
 
-void HandleInput() {
-    if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
+void HandleInput(){
+    if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)){
         Vector2 mousePos = GetMousePosition();
         int col = mousePos.x / SQUARE_SIZE;
         int row = mousePos.y / SQUARE_SIZE;

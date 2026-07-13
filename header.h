@@ -17,6 +17,10 @@ extern int board[BOARD_SIZE][BOARD_SIZE];
 extern bool isPieceSelected;
 extern int selectedRow;
 extern int selectedCol;
+extern Texture2D WhitePieces[7];
+extern Texture2D BlackPieces[7];
 
-// Expose the function so main.c can call it
+// Function prototypes so main.c can read what we're doing
 void HandleInput(void);
+void LoadPieces(void);
+void UnloadPieces(void);

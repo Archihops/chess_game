@@ -10,5 +10,11 @@
   "command": "/usr/bin/cc    -o CMakeFiles/chess.dir/moves.c.o -c /home/carlos/Downloads/nvim_files/chess/moves.c",
   "file": "/home/carlos/Downloads/nvim_files/chess/moves.c",
   "output": "CMakeFiles/chess.dir/moves.c.o"
+},
+{
+  "directory": "/home/carlos/Downloads/nvim_files/chess/build",
+  "command": "/usr/bin/cc    -o CMakeFiles/chess.dir/chesspieces.c.o -c /home/carlos/Downloads/nvim_files/chess/chesspieces.c",
+  "file": "/home/carlos/Downloads/nvim_files/chess/chesspieces.c",
+  "output": "CMakeFiles/chess.dir/chesspieces.c.o"
 }
 ]

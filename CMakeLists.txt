@@ -6,6 +6,6 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Tell CMake which files to compile. 
 # Replace these with the actual names of your C files containing your game loop, structs, and enums.
-add_executable(chess main.c moves.c)
+add_executable(chess main.c moves.c chesspieces.c)
 # Link the Raylib library and the standard math library (-lm)
 target_link_libraries(chess raylib m)

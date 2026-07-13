@@ -129,6 +129,30 @@ chess/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/build
 .PHONY : chess/fast
 
+chesspieces.o: chesspieces.c.o
+.PHONY : chesspieces.o
+
+# target to build an object file
+chesspieces.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/chesspieces.c.o
+.PHONY : chesspieces.c.o
+
+chesspieces.i: chesspieces.c.i
+.PHONY : chesspieces.i
+
+# target to preprocess a source file
+chesspieces.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/chesspieces.c.i
+.PHONY : chesspieces.c.i
+
+chesspieces.s: chesspieces.c.s
+.PHONY : chesspieces.s
+
+# target to generate assembly for a file
+chesspieces.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/chesspieces.c.s
+.PHONY : chesspieces.c.s
+
 main.o: main.c.o
 .PHONY : main.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... chess"
+	@echo "... chesspieces.o"
+	@echo "... chesspieces.i"
+	@echo "... chesspieces.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
