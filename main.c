@@ -34,7 +34,7 @@ int main(){
 
         // 2. Draw the new state
         BeginDrawing();
-            ClearBackground(DARKGRAY);
+            ClearBackground(BLACK);
             DrawBoard();
         EndDrawing();
     }

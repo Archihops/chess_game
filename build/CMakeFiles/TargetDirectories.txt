@@ -1,3 +1,0 @@
-/home/carlos/Downloads/nvim_files/chess/build/CMakeFiles/chess.dir
-/home/carlos/Downloads/nvim_files/chess/build/CMakeFiles/edit_cache.dir
-/home/carlos/Downloads/nvim_files/chess/build/CMakeFiles/rebuild_cache.dir

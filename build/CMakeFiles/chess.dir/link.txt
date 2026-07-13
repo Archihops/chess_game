@@ -1,1 +1,0 @@
-/usr/bin/cc -Wl,--dependency-file=CMakeFiles/chess.dir/link.d CMakeFiles/chess.dir/main.c.o CMakeFiles/chess.dir/moves.c.o CMakeFiles/chess.dir/chesspieces.c.o -o chess  -lraylib -lm

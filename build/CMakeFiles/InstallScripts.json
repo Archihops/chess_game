@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/carlos/Downloads/nvim_files/chess/build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
