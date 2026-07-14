@@ -6,7 +6,6 @@ Texture2D BlackPieces[7];
 
 
 void LoadPieces(void){
-
 WhitePieces[PAWN] = LoadTexture("chess_pieces_64x64_pack/white_pawn.png");
 WhitePieces[KNIGHT] = LoadTexture("chess_pieces_64x64_pack/white_knight.png");
 WhitePieces[BISHOP] = LoadTexture("chess_pieces_64x64_pack/white_bishop.png");
@@ -21,12 +20,12 @@ BlackPieces[ROOK] = LoadTexture("chess_pieces_64x64_pack/black_rook.png");
 BlackPieces[QUEEN] = LoadTexture("chess_pieces_64x64_pack/black_queen.png");
 BlackPieces[KING] = LoadTexture("chess_pieces_64x64_pack/black_king.png");
 
-
 }
 
 void UnloadPieces(void){
-    for(int i = 0; i < 7; i++){
+    for(int i = 0; i <= 6; i++){
         UnloadTexture(WhitePieces[i]);
         UnloadTexture(BlackPieces[i]);
     }
 }
+
