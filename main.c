@@ -1,6 +1,5 @@
 #include "header.h"
 #include <raylib.h>
-
 int posx;
 int posy;
 
@@ -23,6 +22,7 @@ void DrawPieces(void){
         for (int col = 0; col < BOARD_SIZE; col++){
 
             int PieceinSquare = board[row][col];
+
             int drawx = row * SQUARE_SIZE;
             int drawy = col * SQUARE_SIZE;
 
@@ -39,6 +39,7 @@ void DrawPieces(void){
 
 int main(){
     SetConfigFlags(FLAG_WINDOW_RESIZABLE);
+    SetConfigFlags(FLAG_FULLSCREEN_MODE);
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Chess");
     SetTargetFPS(60);
 

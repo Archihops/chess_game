@@ -1,10 +1,10 @@
 #pragma once
 
-#include "raylib.h"
-#include "raymath.h"
+#include <raylib.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
+
 // Replaced const int with #define macros
 #define SCREEN_WIDTH 1200
 #define SCREEN_HEIGHT 1200
@@ -17,7 +17,7 @@ extern int board[BOARD_SIZE][BOARD_SIZE];
 extern bool isPieceSelected;
 extern int selectedRow;
 extern int selectedCol;
-extern Texture2D WhitePiec[7];
+extern Texture2D WhitePieces[7];
 extern Texture2D BlackPieces[7];
 
 // Function prototypes so main.c can read what we're doing
