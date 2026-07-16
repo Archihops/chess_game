@@ -5,11 +5,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Replaced const int with #define macros
 #define SCREEN_WIDTH 1200
 #define SCREEN_HEIGHT 1200
 #define BOARD_SIZE 8
 #define SQUARE_SIZE (SCREEN_WIDTH / BOARD_SIZE)
+#define LIGHT_GOLD (Color){45, 131, 193, 200} 
 
 enum Pieces { EMPTY = 0, PAWN = 1, KNIGHT = 2, BISHOP = 3, ROOK = 4, QUEEN = 5, KING = 6 };
 
@@ -19,10 +19,12 @@ extern int selectedRow;
 extern int selectedCol;
 extern Texture2D WhitePieces[7];
 extern Texture2D BlackPieces[7];
+extern int hoverrow;
+extern int hovercol;
 
 // Function prototypes so main.c can read what we're doing
 void HandleInput(void);
 void LoadPieces(void);
 void UnloadPieces(void);
-// void ImageResize("chess_pieces_64x64_pack/white_pawn.png", 300, 300);
-
+void PieceMoves(void);
+void MouseTracking(void);

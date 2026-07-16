@@ -28,7 +28,6 @@ BlackPieces[BISHOP] = LoadandResize("chess_pieces_64x64_pack/black_bishop.png", 
 BlackPieces[ROOK] = LoadandResize("chess_pieces_64x64_pack/black_rook.png", SQUARE_SIZE, SQUARE_SIZE);
 BlackPieces[QUEEN] = LoadandResize("chess_pieces_64x64_pack/black_queen.png", SQUARE_SIZE, SQUARE_SIZE);
 BlackPieces[KING] = LoadandResize("chess_pieces_64x64_pack/black_king.png", SQUARE_SIZE, SQUARE_SIZE);
-
 }
 
 void UnloadPieces(void){

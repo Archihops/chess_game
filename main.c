@@ -8,8 +8,11 @@ void DrawBoard(void){
         for(int col = 0; col < BOARD_SIZE; col++){
             Color GetSquareColor = ((row + col) % 2 == 0) ? BEIGE : BROWN;
 
-            // Notice we use the exact lowercase variables shared from moves.c
-            if(isPieceSelected && row == selectedRow && col == selectedCol){
+            if (row == hoverrow && col == hovercol){
+                GetSquareColor = LIGHT_GOLD;
+            }
+
+            else if(isPieceSelected && row == selectedRow && col == selectedCol){
                 GetSquareColor = GRAY;
             }
             DrawRectangle(col * SQUARE_SIZE, row * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE, GetSquareColor);
@@ -39,7 +42,6 @@ void DrawPieces(void){
 
 int main(){
     SetConfigFlags(FLAG_WINDOW_RESIZABLE);
-    SetConfigFlags(FLAG_FULLSCREEN_MODE);
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Chess");
     SetTargetFPS(60);
 
@@ -47,6 +49,7 @@ int main(){
 
     while (!WindowShouldClose()){
         // 1. Update the game state first
+        MouseTracking();
         HandleInput();
         // 2. Draw the new state
         BeginDrawing();

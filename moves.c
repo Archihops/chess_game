@@ -1,4 +1,5 @@
 #include "header.h"
+#include <raylib.h>
 
 
 int board[BOARD_SIZE][BOARD_SIZE] = {
@@ -16,8 +17,10 @@ int board[BOARD_SIZE][BOARD_SIZE] = {
 bool isPieceSelected = false;
 int selectedRow = -1;
 int selectedCol = -1;
+int hoverrow = -1;
+int hovercol = -1;
 
-void HandleInput(){
+void HandleInput(void){
     if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)){
         Vector2 mousePos = GetMousePosition();
         int col = mousePos.x / SQUARE_SIZE;
@@ -45,3 +48,19 @@ void HandleInput(){
     }
 }
 
+void MouseTracking(void){
+
+    Vector2 mousetracking = GetMousePosition() ;
+    int row = mousetracking.y / SQUARE_SIZE;
+    int col = mousetracking.x / SQUARE_SIZE;
+
+    if (row >= 0 && row < BOARD_SIZE && col >= 0 && col < BOARD_SIZE){
+        hoverrow = row;
+        hovercol = col;
+    }
+    else{
+        hoverrow = -1;
+        hovercol = -1;
+    }
+
+}
